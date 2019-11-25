@@ -3,9 +3,11 @@ package com.example.firebaseAdvanced;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +26,10 @@ import java.util.List;
 
 // Basic pusing data to database
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String ARTIST_NAME = "artistname";
+    public static final String ARTIST_ID = "artistId";
+
     private EditText editTextName;
     private Button buttonAdd;
     private Spinner spinnerGenres;
@@ -32,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private DatabaseReference databaseArtist;
 
     ListView listViewArtists;
-
     List<Artist> artistList;
 
 
@@ -51,6 +55,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         artistList = new ArrayList<>();
 
         buttonAdd.setOnClickListener(this);
+
+        // Item Click Listener for Items in ListView
+        listViewArtists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Artist artist = artistList.get(position);
+                Intent intent = new Intent(getApplicationContext(), AddTrackActivity.class);
+
+                intent.putExtra(ARTIST_ID, artist.getArtistId());
+                intent.putExtra(ARTIST_NAME, artist.getArtistName());
+
+                startActivity(intent);
+            }
+        });
     }
 
     private void addArtist(){
@@ -99,9 +117,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // See in Artist.java
                 ArtistList adapter = new ArtistList(MainActivity.this, artistList);
                 listViewArtists.setAdapter(adapter);
-
-
-
             }
 
             // This function will be executed every time we have any error

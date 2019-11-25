@@ -13,8 +13,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,21 +39,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/values/strings.xml">
+        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="8" selection-start-line="8" selection-end-line="71" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -57,25 +52,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="690">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+              <folding>
+                <element signature="e#1744#1941#0" expanded="true" />
+                <element signature="e#1940#1941#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/list_layout.xml">
+        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_add_track.xml">
           <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/ArtistList.java">
+        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Track.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +121,11 @@
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Artist.java" />
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/list_layout.xml" />
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/ArtistList.java" />
-        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" />
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" />
+        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_add_track.xml" />
+        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Track.java" />
+        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java" />
       </list>
     </option>
   </component>
@@ -132,11 +152,6 @@
             <path>
               <item name="firebaseTest" type="1abcf292:AndroidViewProjectNode" />
               <item name="firebaseAdvanced" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="firebaseTest" type="1abcf292:AndroidViewProjectNode" />
-              <item name="firebaseAdvanced" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -155,12 +170,6 @@
               <item name="firebaseAdvanced" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="firebaseTest" type="1abcf292:AndroidViewProjectNode" />
-              <item name="firebaseAdvanced" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -181,6 +190,11 @@
   </component>
   <component name="PsdUISettings">
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.example.firebaseAdvanced" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -458,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -481,30 +488,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/list_layout.xml">
       <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/ArtistList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="267">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="90">
+          <caret line="8" selection-start-line="8" selection-end-line="71" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_add_track.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding>
+            <element signature="e#1744#1941#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0/9865019bbd2d95e41dede3d8ebf964aa93f97766/appcompat-1.1.0-sources.jar!/androidx/appcompat/app/AppCompatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Track.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
