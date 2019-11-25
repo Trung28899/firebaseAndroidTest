@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">firebaseAdvanced</string>
+
+
+    <array name="genres">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>Folk</item>
+        <item>Rap</item>
+    </array>
 </resources>
