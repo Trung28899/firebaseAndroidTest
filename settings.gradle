@@ -1,2 +1,2 @@
-include ':app', ':firebase2'
+include ':app', ':firebase2', ':firebaseAdvanced'
 rootProject.name='firebaseTest'
