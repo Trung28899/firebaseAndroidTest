@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-// Basic pusing data to database
+// Adding Artist and Showing List of Artists, retrieved from the database
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String ARTIST_NAME = "artistname";
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private DatabaseReference databaseArtist;
 
     ListView listViewArtists;
-    List<Artist> artistList;
+    List<Artist> listOfArtists;
 
 
     @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         spinnerGenres = (Spinner) findViewById(R.id.spinnerGenres);
         listViewArtists = (ListView) findViewById(R.id.listViewArtists);
 
-        artistList = new ArrayList<>();
+        listOfArtists = new ArrayList<>();
 
         buttonAdd.setOnClickListener(this);
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listViewArtists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Artist artist = artistList.get(position);
+                Artist artist = listOfArtists.get(position);
                 Intent intent = new Intent(getApplicationContext(), AddTrackActivity.class);
 
                 intent.putExtra(ARTIST_ID, artist.getArtistId());
@@ -104,18 +104,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 // Clear the artist before execute the code below
-                artistList.clear();
+                listOfArtists.clear();
 
                 // Loop through all the values of the database
                 for(DataSnapshot artistSnapshot : dataSnapshot.getChildren()){
                     Artist artist = artistSnapshot.getValue(Artist.class);
 
                     // adding artists into artist List
-                    artistList.add(artist);
+                    listOfArtists.add(artist);
                 }
 
                 // See in Artist.java
-                ArtistList adapter = new ArtistList(MainActivity.this, artistList);
+                ArtistList adapter = new ArtistList(MainActivity.this, listOfArtists);
                 listViewArtists.setAdapter(adapter);
             }
 

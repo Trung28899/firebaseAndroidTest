@@ -12,15 +12,17 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
+// JAVA class for showing the List of Artist in the ListView of MainActivity
+
 public class ArtistList extends ArrayAdapter<Artist> {
 
     private Activity context;
-    private List<Artist> artistList;
+    private List<Artist> listOfArtists;
 
-    public ArtistList(Activity context, List<Artist> artistLIst){
-        super(context, R.layout.list_layout, artistLIst);
+    public ArtistList(Activity context, List<Artist> listOfArtists){
+        super(context, R.layout.list_layout, listOfArtists);
         this.context = context;
-        this.artistList = artistLIst;
+        this.listOfArtists = listOfArtists;
     }
 
     @NonNull
@@ -33,7 +35,7 @@ public class ArtistList extends ArrayAdapter<Artist> {
         TextView textViewName = (TextView) listViewItem.findViewById(R.id.textViewName);
         TextView textViewGenres = (TextView) listViewItem.findViewById(R.id.textViewGenres);
 
-        Artist artist = artistList.get(position);
+        Artist artist = listOfArtists.get(position);
 
         textViewName.setText(artist.getArtistName());
         textViewGenres.setText(artist.getArtistGenre());

@@ -1,5 +1,7 @@
 package com.example.firebaseAdvanced;
 
+// Java Class to Create Track Objects
+
 public class Track {
 
     private String trackId;

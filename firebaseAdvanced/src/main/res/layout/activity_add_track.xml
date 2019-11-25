@@ -44,7 +44,7 @@
             android:id="@+id/buttonAddTrack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Artist"
+            android:text="Add Track"
             tools:layout_editor_absoluteX="100dp"
             tools:layout_editor_absoluteY="186dp" />
 

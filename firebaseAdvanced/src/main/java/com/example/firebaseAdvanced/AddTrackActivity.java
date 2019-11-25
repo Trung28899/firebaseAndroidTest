@@ -1,5 +1,6 @@
 package com.example.firebaseAdvanced;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,8 +14,16 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+// Activity to show and append List of Tracks of an Artist
 
 public class AddTrackActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -26,6 +35,8 @@ public class AddTrackActivity extends AppCompatActivity implements View.OnClickL
 
     DatabaseReference databaseTrack;
 
+    List<Track> listOfTracks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -36,6 +47,7 @@ public class AddTrackActivity extends AppCompatActivity implements View.OnClickL
         seekBarRating = (SeekBar) findViewById(R.id.seekBarRating);
         listViewTrack = (ListView) findViewById(R.id.listViewTrack);
         buttonAddTrack = (Button) findViewById(R.id.buttonAddTrack);
+        listOfTracks = new ArrayList<>();
 
         // Passing data from MainActivity to this activity
         Intent intent = getIntent();
@@ -66,6 +78,35 @@ public class AddTrackActivity extends AppCompatActivity implements View.OnClickL
         } else {
             Toast.makeText(this, "Track Name Should Not Be Empty !!", Toast.LENGTH_LONG).show();
         }
+    }
+
+    // function to continuously update database
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        databaseTrack.addValueEventListener(new ValueEventListener() {
+            @Override
+            // This function will be executed every time we change anything inside in database
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                listOfTracks.clear();
+
+                // Loop through all the values of the database
+                for(DataSnapshot trackSnapshot : dataSnapshot.getChildren()){
+                    Track track = trackSnapshot.getValue(Track.class);
+                    listOfTracks.add(track);
+                }
+
+                // showing the list on AddTrackActivity
+                TrackList trackListAdapter = new TrackList(AddTrackActivity.this, listOfTracks);
+                listViewTrack.setAdapter(trackListAdapter);
+            }
+            // Function will be run any time an error happens
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
