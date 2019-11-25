@@ -9,9 +9,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewArtistAdding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Adding Artist Into Database"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
 
         <EditText
             android:id="@+id/editTextName"
@@ -39,6 +50,27 @@
             tools:layout_editor_absoluteX="100dp"
             tools:layout_editor_absoluteY="186dp" />
 
+        <TextView
+            android:id="@+id/textViewArtistListing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="List Of Artist Fetched From Database"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+
+        <ListView
+            android:id="@+id/listViewArtists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="218dp" />
+
     </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

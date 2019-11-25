@@ -1,0 +1,43 @@
+package com.example.firebaseAdvanced;
+
+import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import java.util.List;
+
+public class ArtistList extends ArrayAdapter<Artist> {
+
+    private Activity context;
+    private List<Artist> artistList;
+
+    public ArtistList(Activity context, List<Artist> artistLIst){
+        super(context, R.layout.list_layout, artistLIst);
+        this.context = context;
+        this.artistList = artistLIst;
+    }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        LayoutInflater inflater = context.getLayoutInflater();
+
+        View listViewItem = inflater.inflate(R.layout.list_layout, null, true);
+
+        TextView textViewName = (TextView) listViewItem.findViewById(R.id.textViewName);
+        TextView textViewGenres = (TextView) listViewItem.findViewById(R.id.textViewGenres);
+
+        Artist artist = artistList.get(position);
+
+        textViewName.setText(artist.getArtistName());
+        textViewGenres.setText(artist.getArtistGenre());
+
+        return listViewItem;
+    }
+}
