@@ -17,12 +17,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/ArtistList.java" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/ArtistList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_add_track.xml" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/activity_add_track.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +38,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/update_dialog.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state relative-caret-position="315">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="121" column="44" lean-forward="true" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+              <folding>
+                <element signature="e#2055#2207#0" expanded="true" />
+                <element signature="e#2206#2207#0" expanded="true" />
+                <element signature="e#2737#2958#0" expanded="true" />
+                <element signature="e#2957#2958#0" expanded="true" />
+                <element signature="e#4225#4456#0" expanded="true" />
+                <element signature="e#4455#4456#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,8 +98,9 @@
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/TrackList.java" />
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/ArtistList.java" />
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/Track.java" />
-        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" />
         <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java" />
+        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java" />
+        <option value="$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/update_dialog.xml" />
       </list>
     </option>
   </component>
@@ -360,11 +374,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="25" width="1419" height="855" extended-state="0" />
+    <frame x="21" y="25" width="1419" height="855" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32970226" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32970226" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -516,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/TrackList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -535,8 +542,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/AddTrackActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="-367">
+          <caret line="53" column="64" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/res/layout/update_dialog.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebaseAdvanced/src/main/java/com/example/firebaseAdvanced/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="121" column="44" lean-forward="true" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+          <folding>
+            <element signature="e#2055#2207#0" expanded="true" />
+            <element signature="e#2206#2207#0" expanded="true" />
+            <element signature="e#2737#2958#0" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#4225#4456#0" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
