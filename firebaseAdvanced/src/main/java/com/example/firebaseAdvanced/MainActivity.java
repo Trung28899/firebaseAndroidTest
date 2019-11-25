@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+// Basic pusing data to database
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private EditText editTextName;
     private Button buttonAdd;
