@@ -49,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
+        Try this and see in the firebase to see what happens
+        databaseArtist = FirebaseDatabase.getInstance().getReference("artists/new");
+        */
+
         databaseArtist = FirebaseDatabase.getInstance().getReference("artists");
 
         editTextName = (EditText) findViewById(R.id.editTextName);
@@ -92,45 +97,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Function to Display functionally the Diaglog for updating fields
-    private void showUpdateDialog(final String artistId, String artistName){
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-
-        LayoutInflater inflater = getLayoutInflater();
-
-        final View dialogView = inflater.inflate(R.layout.update_dialog, null);
-
-        dialogBuilder.setView(dialogView);
-
-        final EditText editTextName = (EditText) dialogView.findViewById(R.id.editTextName);
-        final Button buttonUpdate = (Button) findViewById(R.id.update);
-        final Spinner spinnerGenres1 = (Spinner) findViewById(R.id.spinner);
-
-        dialogBuilder.setTitle("Updating Artist: " + artistName);
-        final AlertDialog alertDialog = dialogBuilder.create();
-        alertDialog.show();
-
-
-        buttonUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                /*
-                 String name = editTextName.getText().toString().trim();
-                String genre = spinnerGenres1.getSelectedItem().toString();
-
-                if(TextUtils.isEmpty(name)){
-                    editTextName.setError("Name Required");
-                    return;
-                }
-                updateArtist(artistId, name, genre);
-                // close dialog after update
-                alertDialog.dismiss();
-                */
-                Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_LONG).show();
-            }
-        });
-    }
-
+    /*********************************************************************************
+     *********************************************************************************
+     CODE TO ADD ARTIST
+     *********************************************************************************
+     **********************************************************************************/
     // Function for Adding Artist
     private void addArtist(){
         String name = editTextName.getText().toString().trim();
@@ -155,6 +126,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*********************************************************************************
+     *********************************************************************************
+     CODE TO UPDATE DATA FROM DATABASE
+     *********************************************************************************
+     **********************************************************************************/
     // Function for updating data from database
     @Override
     protected void onStart() {
@@ -189,6 +165,55 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*********************************************************************************
+     *********************************************************************************
+        CODE TO UPDATE AND DELETE DATA WITH A LONG CLICK ON THE ARTIST NAME
+     *********************************************************************************
+     **********************************************************************************/
+
+    // Function to Display functionally the Diaglog for updating fields
+    private void showUpdateDialog(final String artistId, String artistName){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        final View dialogView = inflater.inflate(R.layout.update_dialog, null);
+
+        dialogBuilder.setView(dialogView);
+
+        final EditText editTextName = (EditText) dialogView.findViewById(R.id.editTextName);
+        final Button buttonUpdate = (Button) dialogView.findViewById(R.id.buttonUpdate);
+        final Button buttonDelete = (Button) dialogView.findViewById(R.id.buttonDelete);
+        final Spinner spinnerGenres1 = (Spinner) dialogView.findViewById(R.id.spinner);
+
+        dialogBuilder.setTitle("Updating Artist: " + artistName);
+        final AlertDialog alertDialog = dialogBuilder.create();
+        alertDialog.show();
+
+        buttonUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = editTextName.getText().toString().trim();
+                String genre = spinnerGenres.getSelectedItem().toString();
+
+                if(TextUtils.isEmpty(name)){
+                    editTextName.setError("Name Required");
+                    return;
+                }
+
+                updateArtist(artistId, name, genre);
+                alertDialog.dismiss();
+            }
+        });
+
+        buttonDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteArtist(artistId);
+            }
+        });
+    }
+
     // Function for updating Artist information in the
     private boolean updateArtist(String id, String name, String genre){
         // Getting the particular artist that need to be updated
@@ -203,5 +228,17 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
+
+    private void deleteArtist(String artistId){
+        DatabaseReference drArtist = FirebaseDatabase.getInstance().getReference("artists").child(artistId);
+        DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("tracks").child(artistId);
+
+
+        drArtist.removeValue();
+        drTracks.removeValue();
+
+        Toast.makeText(this, "Artist is deleted", Toast.LENGTH_LONG).show(); 
+    }
+
 
 }
